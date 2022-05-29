@@ -30,7 +30,7 @@ td {
    transition: filter 0.2s;
    &:hover,
    &:active {
-      filter: brightness(90%);
+      opacity: 0.7;
    }
 }
 

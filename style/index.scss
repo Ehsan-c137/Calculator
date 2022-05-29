@@ -10,7 +10,6 @@
    justify-content: center;
    height: 100vh;
    width: 100vw;
-
    overflow: hidden;
 }
 .board {
@@ -19,3 +18,15 @@
 .keys {
    flex-grow: 1;
 }
+
+// @media screen and (min-width: 31.25rem) {
+//    .main {
+//       flex-direction: row-reverse;
+//    }
+//    .keys {
+//       width: 30rem;
+//    }
+//    .board {
+//       width: 50rem;
+//    }
+// }

@@ -25,14 +25,14 @@
                </ul>
             </div>
             <div class="board__number">
-               <p class="board__number-pre">25+25</p>
-               <p class="board__number-res">50</p>
+               <p class="board__number-pre"></p>
+               <p class="board__number-res"></p>
             </div>
          </div>
          <table class="keys">
             <!--  -->
-            <tbody class="">
-               <tr>
+            <tbody>
+               <tr class="hidden">
                   <td class="keys-nonback">
                      <i class="fa-solid fa-square-root-variable"></i>
                   </td>
@@ -41,36 +41,44 @@
                   <td class="keys-nonback">!</td>
                </tr>
                <tr>
-                  <td class="ac">AC</td>
-                  <td class="diff-color">()</td>
-                  <td class="diff-color">%</td>
-                  <td class="diff-color"><i class="fa-solid fa-divide"></i></td>
-               </tr>
-               <tr>
-                  <td>7</td>
-                  <td>8</td>
-                  <td>9</td>
-                  <td class="diff-color">⨉</td>
-               </tr>
-               <tr>
-                  <td>4</td>
-                  <td>5</td>
-                  <td>6</td>
-                  <td class="diff-color">-</td>
-               </tr>
-               <tr>
-                  <td>1</td>
-                  <td>2</td>
-                  <td>3</td>
-                  <td class="diff-color">
-                     <ion-icon name="add-outline"></ion-icon>
+                  <td class="ac" data-all-clear>AC</td>
+                  <td class="diff-color non-active">()</td>
+                  <td class="diff-color non-active">%</td>
+                  <td class="diff-color" data-operation data-operator="/">
+                     <i class="fa-solid fa-divide"></i>
                   </td>
                </tr>
                <tr>
-                  <td>0</td>
-                  <td>.</td>
-                  <td><i class="fa-solid fa-delete-left"></i></td>
-                  <td class="enter">=</td>
+                  <td data-number>7</td>
+                  <td data-number>8</td>
+                  <td data-number>9</td>
+                  <td class="diff-color" data-operation data-operator="*">
+                     <i class="fa-solid fa-xmark"></i>
+                  </td>
+               </tr>
+               <tr>
+                  <td data-number>4</td>
+                  <td data-number>5</td>
+                  <td data-number>6</td>
+                  <td class="diff-color" data-operation data-operator="-">
+                     <i class="fa-solid fa-minus"></i>
+                  </td>
+               </tr>
+               <tr>
+                  <td data-number>1</td>
+                  <td data-number>2</td>
+                  <td data-number>3</td>
+                  <td class="diff-color" data-operation data-operator="+">
+                     <i class="fa-solid fa-plus"></i>
+                  </td>
+               </tr>
+               <tr>
+                  <td data-number>0</td>
+                  <td data-number>.</td>
+                  <td class="delete-btn">
+                     <i class="fa-solid fa-delete-left" data-delete></i>
+                  </td>
+                  <td class="enter" data-equals data-operator="=">=</td>
                </tr>
             </tbody>
          </table>

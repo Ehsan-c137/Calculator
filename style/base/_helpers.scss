@@ -1,3 +1,7 @@
 .hidden {
    display: none !important;
 }
+.non-active {
+   opacity: 0.1 !important;
+   cursor: unset;
+}
