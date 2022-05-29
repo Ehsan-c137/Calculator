@@ -1,0 +1,60 @@
+.keys {
+   display: grid;
+   align-items: center;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   grid-auto-flow: dense;
+   justify-items: center;
+   border-collapse: collapse;
+
+   min-width: 100%;
+   background-color: var(--bg-keys-color);
+   padding: 1rem 0rem;
+
+   thead,
+   tbody,
+   tr {
+      display: contents;
+   }
+
+   th,
+   td {
+      padding: 1.5rem;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+   }
+}
+td {
+   background-color: var(--primery-color-normal-key);
+   color: var(--text-color);
+   transition: filter 0.2s;
+   &:hover,
+   &:active {
+      filter: brightness(90%);
+   }
+}
+
+.diff-color {
+   background-color: var(--primery-color-green);
+}
+.enter {
+   background-color: var(--primery-color-green-d);
+}
+.ac {
+   background-color: var(--primery-color-blue);
+}
+.keys-nonback {
+   background-color: transparent;
+}
+
+td {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-weight: 500;
+   font-size: 2.3rem;
+   width: 7rem;
+   height: 7rem;
+   cursor: pointer;
+   border-radius: 50%;
+}

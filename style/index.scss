@@ -1,0 +1,21 @@
+@import "./base/_reset", "./base/typography", "./base/colors", "./base/mixin",
+   "./base/helpers";
+
+@import "./layouts/_board", "./layouts/_keys";
+
+.main {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   height: 100vh;
+   width: 100vw;
+
+   overflow: hidden;
+}
+.board {
+   flex-grow: 2;
+}
+.keys {
+   flex-grow: 1;
+}

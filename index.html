@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+         crossorigin="anonymous"
+         referrerpolicy="no-referrer"
+      />
+      <link rel="stylesheet" href="./style/index.css" />
+      <script defer src="./app.js"></script>
+      <title>Calculator</title>
+   </head>
+   <body>
+      <main class="main">
+         <div class="board">
+            <div class="board__menu">
+               <i class="fa-solid fa-ellipsis-vertical three-dots"></i>
+               <ul class="board__menu__items hidden">
+                  <li class="darkmode-btn">Dark Mode</li>
+               </ul>
+            </div>
+            <div class="board__number">
+               <p class="board__number-pre">25+25</p>
+               <p class="board__number-res">50</p>
+            </div>
+         </div>
+         <table class="keys">
+            <!--  -->
+            <tbody class="">
+               <tr>
+                  <td class="keys-nonback">
+                     <i class="fa-solid fa-square-root-variable"></i>
+                  </td>
+                  <td class="keys-nonback">π</td>
+                  <td class="keys-nonback">^</td>
+                  <td class="keys-nonback">!</td>
+               </tr>
+               <tr>
+                  <td class="ac">AC</td>
+                  <td class="diff-color">()</td>
+                  <td class="diff-color">%</td>
+                  <td class="diff-color"><i class="fa-solid fa-divide"></i></td>
+               </tr>
+               <tr>
+                  <td>7</td>
+                  <td>8</td>
+                  <td>9</td>
+                  <td class="diff-color">⨉</td>
+               </tr>
+               <tr>
+                  <td>4</td>
+                  <td>5</td>
+                  <td>6</td>
+                  <td class="diff-color">-</td>
+               </tr>
+               <tr>
+                  <td>1</td>
+                  <td>2</td>
+                  <td>3</td>
+                  <td class="diff-color">
+                     <ion-icon name="add-outline"></ion-icon>
+                  </td>
+               </tr>
+               <tr>
+                  <td>0</td>
+                  <td>.</td>
+                  <td><i class="fa-solid fa-delete-left"></i></td>
+                  <td class="enter">=</td>
+               </tr>
+            </tbody>
+         </table>
+      </main>
+
+      <script
+         type="module"
+         src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+      ></script>
+      <script
+         nomodule
+         src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+      ></script>
+   </body>
+</html>
