@@ -93,21 +93,23 @@ class Calculator {
    }
 
    getDisplayNumber(number) {
-      const stringNum = number.toString();
-      const integerDigits = parseFloat(stringNum.split(".")[0]);
-      const decimalDigits = stringNum.split(".")[1];
-      let integerDisplay;
-      if (isNaN(integerDigits)) {
-         integerDisplay = "";
-      } else {
-         integerDisplay = integerDigits.toLocaleString("en", {
-            maximumFractionDigits: 0,
-         });
-      }
-      if (decimalDigits != null) {
-         return `${integerDisplay}.${decimalDigits}`;
-      } else {
-         return integerDisplay;
+      if (number) {
+         const stringNum = number.toString();
+         const integerDigits = parseFloat(stringNum.split(".")[0]);
+         const decimalDigits = stringNum.split(".")[1];
+         let integerDisplay;
+         if (isNaN(integerDigits)) {
+            integerDisplay = "";
+         } else {
+            integerDisplay = integerDigits.toLocaleString("en", {
+               maximumFractionDigits: 0,
+            });
+         }
+         if (decimalDigits != null) {
+            return `${integerDisplay}.${decimalDigits}`;
+         } else {
+            return integerDisplay;
+         }
       }
    }
    updateDisplay() {
