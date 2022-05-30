@@ -50,7 +50,7 @@ class Calculator {
       if (number === "." && this.currentOperand.includes(".")) return;
       this.currentOperand =
          typeof this.currentOperand == "undefined"
-            ? ""
+            ? number
             : this.currentOperand + number.toString();
    }
 
@@ -81,9 +81,9 @@ class Calculator {
          case "*":
             computation = prev * current;
             break;
-         // case "-":
-         //    computation = prev / current;
-         //    break;
+         case "/":
+            computation = prev / current;
+            break;
          default:
             return;
       }
@@ -139,17 +139,17 @@ operationBtns.forEach((button) => {
       calculator.updateDisplay();
    });
 });
-
+// =
 equalBtn.addEventListener("click", (button) => {
    calculator.compute();
    calculator.updateDisplay();
 });
-
+// AC
 clearAllBtn.addEventListener("click", (button) => {
    calculator.clear();
    calculator.updateDisplay();
 });
-
+// del
 delBtn.addEventListener("click", (button) => {
    calculator.delete();
    calculator.updateDisplay();
