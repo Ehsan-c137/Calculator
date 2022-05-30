@@ -87,7 +87,6 @@ class Calculator {
          default:
             return;
       }
-      9;
       this.currentOperand = computation;
       this.operation = undefined;
       this.preOperand = "";
@@ -153,4 +152,14 @@ clearAllBtn.addEventListener("click", (button) => {
 delBtn.addEventListener("click", (button) => {
    calculator.delete();
    calculator.updateDisplay();
+});
+document.body.addEventListener("keyup", function (e) {
+   const key = e.key;
+
+   switch (key) {
+      case "Backspace":
+         calculator.delete();
+         calculator.updateDisplay();
+         break;
+   }
 });
