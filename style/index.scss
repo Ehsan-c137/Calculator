@@ -19,14 +19,23 @@
    flex-grow: 1;
 }
 
-// @media screen and (min-width: 31.25rem) {
-//    .main {
-//       flex-direction: row-reverse;
-//    }
-//    .keys {
-//       width: 30rem;
-//    }
-//    .board {
-//       width: 50rem;
-//    }
-// }
+@media screen and (min-width: 30rem) {
+   body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+   }
+   .main {
+      display: flex;
+      justify-content: center;
+      background-color: white;
+      padding: 1rem;
+      max-width: 33rem;
+      height: 90%;
+      border-radius: 2rem;
+   }
+   .board {
+      border-radius: 2rem;
+   }
+}
